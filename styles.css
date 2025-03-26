@@ -402,6 +402,7 @@ section {
 
 .formation-item h4 {
   font-size: 1.12rem;
+  flex: 1;
 }
 
 .uni-type {
