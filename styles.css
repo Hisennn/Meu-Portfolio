@@ -360,6 +360,12 @@ section {
   color: #000;
 }
 
+.formation-item-holder {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
 .formation-item {
   background-color: #151515;
   background-image: url("./img/pattern.svg");
