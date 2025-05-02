@@ -6,7 +6,7 @@
                 src: url('data:font/woff2;charset=utf-8;base64,SEU_BASE64_AQUI') format('woff2');
             }
             text {
-                font-family: 'Playfair Display', serif;
+                font-family: 'Bricolage Grotesque', sans-serif;
                 font-size: 54px;
                 font-weight: 500;
                 fill: black;
