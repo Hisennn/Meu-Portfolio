@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Desenvolvedor Front-end e UX/UI Designer. Localizado na região de Ribeirão Preto.">
     <title>Gabriel Lemes</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <div class="grad-background">
@@ -28,21 +31,23 @@
       </div>
       <main>
         <div class="about">
-          <h1>Desenvolvedor <br />Front End & <br />UX/UI Designer</h1>
-          <div class="location-content">
+          <h1 class="fadeInLeft" data-anime="200">Desenvolvedor <br />Front End & <br />UX/UI Designer</h1>
+          <div class="location-content fadeInLeft" data-anime="400">
             <img src="/img/local.svg" alt="">
             <p class="location">Ribeirão Preto/Região, São Paulo, Brasil.</p>
           </div>
-          <div class="curriculo-dl">
+          <div class="curriculo-dl fadeInLeft" data-anime="600">
             <a href="/downloads/Gabriel - Curriculo.pdf" download="Curriculo_Gabriel_Lemes.pdf"><img src="/img/download-ico.svg" alt="">Currículo</a>
           </div>
-          <p class="about-text">Me chamo <strong>Gabriel Lemes</strong> e sou estudante de Desenvolvimento <strong>Front-End</strong>. <br />Atualmente, estou aprendendo JavaScript e, em breve, pretendo me aprofundar em React.js. <br />Tenho alguns projetos disponíveis no meu <a class="about-git" href="https://github.com/Hisennn">GitHub</a>. <br />Curso <strong>Análise e Desenvolvimento de Sistemas</strong> e, no futuro, planejo estudar Engenharia de Software. <br />Sou apaixonado por tecnologia e estou sempre disposto a aprender coisas novas.</p>
+          <p class="about-text fadeInLeft" data-anime="800">Sou Gabriel Lemes, estudante de <strong>Desenvolvimento Front-End</strong>. <br />Atualmente, estou aprendendo <strong>Ruby</strong> e <strong>Ruby on Rails</strong> e, em breve, planejo estudar React.js. <br />Tenho alguns projetos disponíveis no meu <a class="about-git" href="https://github.com/Hisennn">GitHub</a>. <br />Curso <strong>Análise e Desenvolvimento de Sistemas</strong> e, no futuro, quero estudar Engenharia de Software. <br />Sou apaixonado por tecnologia e sempre busco aprender mais.</p>
+
+
         </div>
       </div>
-      <div class="skills-title">
+      <div class="skills-title fadeInLeft" data-anime="1000">
         <h3>Habilidades</h3>
       </div>
-      <div class="skills">
+      <div class="skills fadeInLeft" data-anime="1100">
         <div class="skills-item">
             <img src="/img/dev-icon.svg" alt="" />
             <h4>Desenvolvimento</h4>
@@ -146,5 +151,7 @@
         <span class="ref">Devicon, Google Symbols</span>
       </div>
     </div>
+    <script src="/plugins/simple-anime.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
